@@ -37,47 +37,13 @@ cadmousectl [-[lprsS] value]
 | Option | Effect                                                  |
 |--------|---------------------------------------------------------|
 | -l     | Enable (non-zero) or disable (zero) lift-off detection. |
-|--------|---------------------------------------------------------|
 | -p     | Set polling rate (125, 250, 500, 1000).                 |
-|--------|---------------------------------------------------------|
-| -r     | Remap buttons. Format is real_button:assigned_button.   |
-|        |                                                         |
-|        | Values for real_button:                                 |
-|        |     left, right, middle, wheel, forward, backward, rm   |
-|        |                                                         |
-|        | Values for assigned_button:                             |
-|        |     left, right, middle, backward, forward, rm, extra   |
-|        |                                                         |
-|        | .. note::                                               |
-|        |     The extra button was discovered by accident.        |
-|        |     Using this, you can assign an additional button to  |
-|        |     the wheel click. It will have id 11 on X11.         |
-|--------|---------------------------------------------------------|
-| -s     | Set speed (1-164).                                      |
-|        |                                                         |
-|        | Cannot be used with -d                                  |
-|--------|---------------------------------------------------------|
-| -d     | Set speed in DPI (50-8200).                             |
-|        |                                                         |
-|        | Cannot be used with -s                                  |
-|--------|---------------------------------------------------------|
-| -S     | Set Smart Scroll mode. There are two additional modes   |
-|        | which the Windows GUI does not expose.                  |
-|        |                                                         |
-|        | 0                                                       |
-|        |     off                                                 |
-|        | 1                                                       |
-|        |     normal                                              |
-|        | 2                                                       |
-|        |     slow                                                |
-|        | 3                                                       |
-|        |     accelerated scrolling                               |
-|        |                                                         |
-|        | Accelerated scrolling mode is different from the other  |
-|        | modes in that it does not simulate a flywheel but       |
-|        | instead sends more scroll wheel clicks the faster you   |
-|        | scroll.                                                 |
-|--------|---------------------------------------------------------|
+| -r     | Remap buttons. Format is real_button:assigned_button.<br><br>Values for real_button:<br>left, right, middle, wheel, forward, backward, rm<br><br>Values for assigned_button:<br>left, right, middle, backward, forward, rm, extra   <br><br>*note:The extra button was discovered by accident. Using this, you can assign an additional button to the wheel click. It will have id 11 on X11*.         
+| -s     | Set speed (1-164). <br>Cannot be used with -d                                                                                                                               
+| -d     | Set speed in DPI (50-8200).<br> Cannot be used with -s                                  
+| -S     | Set Smart Scroll mode. There are two additional modes <br> 0 = off, 1 = normal, 2 = slow, 3 = accelerated.  
+
+
 
 License
 =======
