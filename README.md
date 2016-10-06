@@ -1,4 +1,4 @@
-macOS X Configuration Tool for 3Dconnexion CadMouse
+macOS Configuration Tool for 3Dconnexion CadMouse
 -------------------------------------------
 
 Since 3Dconnexion does not have any open-source tool to change firmware
