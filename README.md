@@ -1,16 +1,17 @@
-macOS Configuration Tool for 3Dconnexion CadMouse
--------------------------------------------
+cadmousectl-osx
+=================
+A macOS configuration tool for 3Dconnexion's CadMouse.
 
 Since 3Dconnexion does not have any open-source tool to change firmware
-settings for their CadMouse device, and doesn't really care about any OS
-besides windows, I forked the awesome linux program [cadmousectl]
+settings for their CadMouse device and a lack of support for OS X, 
+I forked the awesome linux program [cadmousectl]
 (https://github.com/lachs0r/cadmousectl) by Martin Herkt who took the time
 to reverse engineer the entire protocol with a virtual machine.
 
 Anyway, this is my humble attempt at an OS X port.
 
 Compilation
-===========
+-----------
 
 This has one dependency, hidapi.  Install it in /usr/local manually, or
 use brew:
@@ -30,7 +31,7 @@ make
 ```
 
 Usage
-=====
+-----
 
 cadmousectl [-[lprsS] value]
 
@@ -46,7 +47,7 @@ cadmousectl [-[lprsS] value]
 
 
 License
-=======
+-------
 
 This software is available under the terms of the ISC license as it appears
 in each source file.
